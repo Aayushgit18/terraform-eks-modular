@@ -1,10 +1,8 @@
 terraform {
   backend "s3" {
-    bucket         = "ayush-terraform-state"
-    key            = "eks/qa/terraform.tfstate"
-    region         = "us-east-1"
-    dynamodb_table = "terraform-locks"
-    encrypt        = true
+    bucket = "ayush-terraform-state"
+    key    = "qa/terraform.tfstate"
+    region = "us-east-1"
   }
 }
 
